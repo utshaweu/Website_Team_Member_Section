@@ -1,0 +1,112 @@
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style-type: none;
+}
+img{
+    vertical-align: middle;
+    border: 0;
+}
+#team{
+    margin: 75px 0;
+}
+#team h2{
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #333;
+    padding-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #636e72;
+}
+#team h2:after{
+    content: '';
+    background: #636e72;
+    height: 3px;
+    width: 150px;
+    margin: 10px auto;
+    display: block;
+}
+.profile{
+    margin-top: 25px;
+}
+.profile .img-box{
+    display: block;
+    position: relative;
+    opacity: 1;
+}
+.profile h3{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #636e72;
+    text-transform: capitalize;
+}
+.profile h4{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #ff9800;
+    text-transform: capitalize;
+}
+.profile p{
+    font-size: 14px;
+    line-height: 20px;
+    color: #2d3436;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    padding-top: 5px;
+}
+.img-box:after{
+    position: absolute;
+    content: '';
+    opacity: 0;
+    background-color: rgba(0,0,0,0.6);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.img-box ul{
+    position: absolute;
+    margin: 0;
+    padding: 50px 0;
+    z-index: 1;
+    bottom: 0;
+    opacity: 0;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+.img-box ul li{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 30px;
+}
+.img-box a{
+    color: #fff;
+}
+.img-box:hover:after{
+    opacity: 1;
+}
+.img-box:hover ul{
+    opacity: 1;
+}
+.img-box a:hover li{
+    color: #007bff;
+    border: 1px solid #007bff;
+}
+.img-box:after,.img-box ul,.img-box ul li{
+    transition: all linear .3s;
+}
